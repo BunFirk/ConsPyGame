@@ -2,6 +2,7 @@ from rich.console import Console
 from rich.align import Align
 from rich.text import Text
 from rich.panel import Panel
+import readchar
 
 console = Console()
 
@@ -16,4 +17,4 @@ def print_dialog(dialog: str,text_bold: bool = True, text_color: str = "white", 
         )
         screen.update(Panel(text_content))
 
-        input()
+        readchar.readkey()
