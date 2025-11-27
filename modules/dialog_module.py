@@ -1,3 +1,4 @@
+from rich import box
 from rich.console import Console
 from rich.align import Align
 from rich.text import Text
@@ -15,6 +16,6 @@ def print_dialog(dialog: str,text_bold: bool = True, text_color: str = "white", 
             """, justify="center"),
             vertical="middle",
         )
-        screen.update(Panel(text_content))
+        screen.update(Panel(text_content, box=box.ROUNDED))
 
         readchar.readkey()
