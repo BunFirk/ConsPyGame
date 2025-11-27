@@ -1,3 +1,4 @@
+from game_scripts.chooser.choise_name import print_whats_your_name
 from modules.dialog_module import print_dialog
 def main():
     print_dialog("""
@@ -8,6 +9,7 @@ def main():
 Чтобы скипать диалоги нажмите
 :backhand_index_pointing_right:[red]  Enter [/red]:backhand_index_pointing_left:
     """)
+    print_whats_your_name()
     print_dialog("""
 Однажды на одной планете обитали люди и нечисть.
 Они жили в постоянных конфликтах.
@@ -24,7 +26,8 @@ def main():
 Когда вы очнулись вы ничего не помнили.
 Вы знаете только свои увлечения и способности.
 
-[yellow][Сейчас будет выбор способностей][/yellow]
+[yellow][Сейчас будет выбор класса][/yellow]
+[red][blink]Класс нельзя будет потом поменять[/blink][/red]
     """)
 
 
